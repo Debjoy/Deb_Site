@@ -1,0 +1,122 @@
+/*
+Theme Name: Deb_Site
+Author: Debjoy
+Version: 1.0
+Author uri: http://atdebjoy.com
+Description: A simple website built for learning and customisation.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: debsite
+*/
+html {
+  scroll-behavior: smooth;
+}
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+#mainNav{
+    box-shadow: 0px 1px 157px 0px rgba(0,0,0,1);
+}
+#searchInput::placeholder{
+    color:white;
+    opacity: 0.5
+}
+#searchInput{
+    color:white;
+    border:0px;
+    width:0px;
+    visibility:hidden;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    
+}
+#searchButton:hover + #searchInput{
+    width:auto;
+    opacity:1;
+    visibility:visible;
+}
+#searchInput:hover{
+    width:auto;
+    opacity:1;
+    visibility:visible;
+}
+#searchButton:focus + #searchInput{
+    width:auto;
+    opacity:1;
+    visibility:visible;
+}
+#searchInput:focus{
+    width:auto;
+    opacity:1;
+    visibility:visible;
+}
+#searchButton{
+    border:none;
+    opacity:0.5;
+}
+#searchButton:hover{
+    border:none;
+    color:#007bff;
+}
+.customize-support .fixed-top {
+top: 32px;
+}
+#commentform .form-submit #submit{
+    background-color: #007bff;
+    color:white;
+    border:none;
+    padding:5px 10px;
+}
+#commentform .comment-form-comment{
+    display:grid;
+}
+
+
+/* SIDEBAR  */
+.CustomSidebar ul{
+    padding-left:0;
+}
+.CustomSidebar ul li{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;   
+    margin-bottom: -1px;
+    display:block;
+    text-align:center;
+}
+.CustomSidebar ul li a{
+    color:black;
+    opacity:0.5;
+}
+.CustomSidebar ul li:first-of-type{
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.CustomSidebar ul li:last-of-type{
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+
+
+/* WooCommerce  */
+.woocommerce-loop-product__link{
+    color:black;
+}
+.woocommerce-loop-product__link:hover{
+    color:#555;
+}
+.woocommerce form .form-row .input-text, .woocommerce-page form .form-row .input-text{
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.woocommerce-input-wrapper{
+    width:100%
+}
